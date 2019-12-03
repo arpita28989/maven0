@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.484 s <<< FAILURE! - in TestSuite
+mainTest(Arpita.Testing3)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	verifying element expected [true] but found [false]
+	at Arpita.Testing3.mainTest(Testing3.java:43)
+

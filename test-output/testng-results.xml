@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="10" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="75" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+    <groups>
+      <group name="smoke">
+        <method signature="Testing3.mainTest()[pri:2, instance:Arpita.Testing3@e720b71]" name="mainTest" class="Arpita.Testing3"/>
+        <method signature="Testing3.endTest()[pri:3, instance:Arpita.Testing3@e720b71]" name="endTest" class="Arpita.Testing3"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Testing3.mainTest()[pri:2, instance:Arpita.Testing3@e720b71]" name="mainTest" class="Arpita.Testing3"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Default test" duration-ms="75" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+      <class name="Arpita.Testing3">
+        <test-method status="PASS" signature="hometest()[pri:1, instance:Arpita.Testing3@e720b71]" name="hometest" duration-ms="4" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hometest -->
+        <test-method status="FAIL" signature="mainTest()[pri:2, instance:Arpita.Testing3@e720b71]" name="mainTest" duration-ms="4" started-at="2019-11-20T03:07:50Z" depends-on-methods="Arpita.Testing3.hometest" finished-at="2019-11-20T03:07:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+verifying element expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+verifying element expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at Arpita.Testing3.mainTest(Testing3.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainTest -->
+        <test-method status="SKIP" signature="endTest()[pri:3, instance:Arpita.Testing3@e720b71]" name="endTest" duration-ms="0" started-at="2019-11-20T03:07:50Z" depends-on-methods="Arpita.Testing3.mainTest" finished-at="2019-11-20T03:07:50Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Testing3.endTest()[pri:3, instance:Arpita.Testing3@e720b71] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Testing3.endTest()[pri:3, instance:Arpita.Testing3@e720b71] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- Arpita.Testing3 -->
+      <class name="Arpita.Testing2">
+        <test-method status="PASS" signature="test4()[pri:0, instance:Arpita.Testing2@1b26f7b2]" name="test4" duration-ms="9" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:Arpita.Testing2@1b26f7b2]" name="test5" duration-ms="2" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+      </class> <!-- Arpita.Testing2 -->
+      <class name="Arpita.Testing1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:Arpita.Testing1@11758f2a]" name="f" duration-ms="2" started-at="2019-11-20T03:07:50Z" data-provider="dp" finished-at="2019-11-20T03:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:Arpita.Testing1@11758f2a]" name="f" duration-ms="1" started-at="2019-11-20T03:07:50Z" data-provider="dp" finished-at="2019-11-20T03:07:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Arpita.Testing1@11758f2a]" name="test1" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:Arpita.Testing1@11758f2a]" name="test2" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:Arpita.Testing1@11758f2a]" name="test3" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Arpita.Testing1@11758f2a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-11-20T03:07:50Z" finished-at="2019-11-20T03:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Arpita.Testing1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
